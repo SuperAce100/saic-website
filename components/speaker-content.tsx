@@ -10,7 +10,7 @@ const speakers = [
   },
   {
     name: "Ishan Mukherjee",
-    role: "CEO, Rox AI",
+    role: "CEO, Rox",
     background: "Founder of Rox, building the AI native CRM.",
     date: new Date("2025-10-08 18:00:00"),
   },
@@ -76,7 +76,7 @@ export default function SpeakerContent() {
                 </p>
               </div>
 
-              <div className="flex items-center gap-2 text-white/50 text-xs font-medium uppercase tracking-wider whitespace-nowrap shrink-0 bg-white/5 px-3 py-1.5 rounded-lg">
+              <div className="flex items-center gap-2 text-white/50 text-xs font-medium uppercase tracking-wider whitespace-nowrap shrink-0 px-3 py-1.5 rounded-sm">
                 <CalendarIcon className="w-3 h-3" />
                 <span>
                   {speaker.date.toLocaleDateString("en-US", {

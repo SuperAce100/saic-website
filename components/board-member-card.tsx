@@ -38,7 +38,7 @@ export default function BoardMemberCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.2 }}
     >
-      <div className="relative w-48 h-48 rounded-3xl overflow-hidden bg-white/10">
+      <div className="relative w-full aspect-square rounded-3xl overflow-hidden bg-white/10">
         {image ? (
           <Image
             src={image}

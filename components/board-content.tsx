@@ -3,6 +3,30 @@ import BoardMemberCard, { BoardMember } from "@/components/board-member-card";
 
 const BOARD_MEMBERS: BoardMember[] = [
   {
+    name: "Sally Zhu",
+    title: "President",
+    image: "/board/sally.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/sally-zhu-937b7b127/",
+      twitter: "https://x.com/SallyHZhu",
+      website: "https://salzhu.github.io/",
+      googleScholar:
+        "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=8JOQdDkAAAAJ",
+      github: "https://github.com/salzhu",
+    },
+  },
+  {
+    name: "Tanvir Bhathal",
+    title: "Speaker Series",
+    image: "/board/tanvir.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/tanvir-bhathal/",
+      github: "https://github.com/mrTSB",
+      twitter: "https://x.com/BhathalTanvir0",
+      googleScholar: "https://scholar.google.com/citations?hl=en&user=bnc3of4AAAAJ",
+    },
+  },
+  {
     name: "Jason Zhang",
     title: "Speaker Series",
     image: "/board/jason.png",
@@ -14,12 +38,28 @@ const BOARD_MEMBERS: BoardMember[] = [
     },
   },
   {
-    name: "Board Member",
-    title: "Role TBD",
+    name: "Kushal Thaman",
+    title: "Research",
+    image: "/board/kushal.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/k-thaman/",
+      twitter: "https://x.com/kushal1t",
+      website: "https://cs.stanford.edu/~kushalt/",
+      googleScholar: "https://scholar.google.com/citations?user=89nZKJgAAAAJ",
+      github: "https://github.com/kushalthaman",
+    },
   },
   {
-    name: "Board Member",
-    title: "Role TBD",
+    name: "Asanshay Gupta",
+    title: "Design",
+    image: "/board/asanshay.jpg",
+    links: {
+      linkedin: "https://www.linkedin.com/in/asanshay/",
+      twitter: "https://x.com/AsanshayG",
+      website: "https://asanshay.com",
+      googleScholar: "https://scholar.google.com/citations?hl=en&user=agB2x10AAAAJ",
+      github: "https://github.com/SuperAce100",
+    },
   },
   {
     name: "Board Member",
@@ -42,7 +82,7 @@ export default function BoardContent() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="w-full max-w-4xl mx-auto px-6"
+      className="w-full max-w-4xl mx-auto px-6 pb-16"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-start items-start ">
         {BOARD_MEMBERS.map((member, index) => (
