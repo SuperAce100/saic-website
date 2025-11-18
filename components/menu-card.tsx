@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { ImageDithering } from "@paper-design/shaders-react";
-import { useState } from "react";
 
 export default function MenuCard({
   href,

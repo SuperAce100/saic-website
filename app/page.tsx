@@ -1,9 +1,5 @@
-"use client";
 import ShaderBackground from "@/components/shader-background";
 import Navbar from "@/components/navbar";
-import { DivideSquareIcon } from "lucide-react";
-import Link from "next/link";
-import { ImageDithering } from "@paper-design/shaders-react";
 import MenuCard from "@/components/menu-card";
 
 export default function Home() {
