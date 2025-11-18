@@ -6,8 +6,8 @@ export default function ShaderBackground() {
 
   return (
     <GrainGradient
-      width={width}
-      height={height}
+      width="100%"
+      height="100%"
       colors={["#ac1515", "#ffddc7"]}
       colorBack="#1f0000"
       softness={1}
