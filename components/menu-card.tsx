@@ -26,7 +26,7 @@ export default function MenuCard({
       layoutId={layoutId}
       onClick={onClick}
       className={cn(
-        "relative rounded-2xl transition-colors duration-100 p-6 group will-change-auto",
+        "relative rounded-2xl transition-all duration-200 p-6 group will-change-auto active:scale-95",
         !isBanner && "hover:bg-white/5 cursor-pointer",
         className
       )}

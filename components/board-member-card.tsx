@@ -33,7 +33,7 @@ export default function BoardMemberCard({
 }: BoardMember & { index: number }) {
   return (
     <motion.div
-      className="flex flex-col items-start text-left gap-3 transition-colors duration-200"
+      className="flex flex-col items-start text-left gap-3 transition-colors duration-200 group"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.2 }}
