@@ -62,37 +62,43 @@ export default function HomeInteractive() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <div className="w-full p-4 pt-24">
-                 {/* Banner Area */}
+              <div className="w-full flex flex-col items-center p-4 pt-24">
+                {/* Banner Area - constrained to max-w-4xl to match content */}
                 {view === "speakers" && (
-                  <MenuCard
-                    layoutId="card-speakers"
-                    title="Speakers"
-                    image="/sam.png"
-                    onClick={clearView}
-                    className="w-full h-64 mb-8"
-                    isBanner={true}
-                  />
+                  <div className="w-full max-w-4xl mx-auto">
+                    <MenuCard
+                      layoutId="card-speakers"
+                      title="Speakers"
+                      image="/sam.png"
+                      onClick={clearView}
+                      className="w-full h-64 mb-8"
+                      isBanner={true}
+                    />
+                  </div>
                 )}
                 {view === "board" && (
-                  <MenuCard
-                    layoutId="card-board"
-                    title="Board"
-                    image="/stanny.png"
-                    onClick={clearView}
-                    className="w-full h-64 mb-8"
-                    isBanner={true}
-                  />
+                  <div className="w-full max-w-4xl mx-auto">
+                    <MenuCard
+                      layoutId="card-board"
+                      title="Board"
+                      image="/stanny.png"
+                      onClick={clearView}
+                      className="w-full h-64 mb-8"
+                      isBanner={true}
+                    />
+                  </div>
                 )}
                 {view === "join" && (
-                  <MenuCard
-                    layoutId="card-join"
-                    title="Join"
-                    image="/mail.png"
-                    onClick={clearView}
-                    className="w-full h-64 mb-8"
-                    isBanner={true}
-                  />
+                  <div className="w-full max-w-4xl mx-auto">
+                    <MenuCard
+                      layoutId="card-join"
+                      title="Join"
+                      image="/mail.png"
+                      onClick={clearView}
+                      className="w-full h-64 mb-8"
+                      isBanner={true}
+                    />
+                  </div>
                 )}
 
                 {/* Content Area */}

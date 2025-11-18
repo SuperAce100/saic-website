@@ -1,9 +1,6 @@
 "use client";
 import { GrainGradient } from "@paper-design/shaders-react";
 export default function ShaderBackground() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-
   return (
     <GrainGradient
       width="100%"
