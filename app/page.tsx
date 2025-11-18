@@ -3,6 +3,8 @@ import ShaderBackground from "@/components/shader-background";
 import Navbar from "@/components/navbar";
 import { DivideSquareIcon } from "lucide-react";
 import Link from "next/link";
+import { ImageDithering } from "@paper-design/shaders-react";
+import MenuCard from "@/components/menu-card";
 
 export default function Home() {
   return (
@@ -14,30 +16,9 @@ export default function Home() {
           Stanford&apos;s home for students in AI
         </h1>
         <div className="flex flex-row items-center justify-center w-full gap-4">
-          <Link
-            href="/"
-            className="flex-1 aspect-square rounded-2xl border border-transparent hover:border-white/30 hover:bg-white/5  transition-all duration-100 p-6 relative"
-          >
-            <h3 className="text-5xl text-white font-medium tracking-tight absolute bottom-6 left-6 text-center">
-              Speakers
-            </h3>
-          </Link>
-          <Link
-            href="/"
-            className="flex-1 aspect-square rounded-2xl border border-transparent hover:border-white/30 hover:bg-white/5  transition-all duration-100 p-6 relative"
-          >
-            <h3 className="text-5xl text-white font-medium tracking-tight absolute bottom-6 left-6 text-center">
-              Board
-            </h3>
-          </Link>
-          <Link
-            href="/"
-            className="flex-1 aspect-square rounded-2xl border border-transparent hover:border-white/30 hover:bg-white/5  transition-all duration-100 p-6 relative"
-          >
-            <h3 className="text-5xl text-white font-medium tracking-tight absolute bottom-6 left-6 text-center">
-              Join
-            </h3>
-          </Link>
+          <MenuCard href="/speakers" title="Speakers" image="/sam.png" />
+          <MenuCard href="/board" title="Board" image="/stanny.png" />
+          <MenuCard href="/join" title="Join" image="/mail.png" />
         </div>
       </div>
     </div>
