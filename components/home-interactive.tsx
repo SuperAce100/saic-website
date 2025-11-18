@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useQueryState } from "nuqs";
 import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
 import MenuCard from "@/components/menu-card";
@@ -9,6 +10,7 @@ import JoinContent from "@/components/join-content";
 
 export default function HomeInteractive() {
   const [view, setView] = useQueryState("view");
+  const [isHovered, setIsHovered] = useState(false);
 
   const clearView = () => setView(null);
 
@@ -24,12 +26,32 @@ export default function HomeInteractive() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <motion.h1
-                layoutId="main-title"
-                className="text-8xl font-medium tracking-tight text-white max-w-2xl text-left mr-auto"
-              >
-                Stanford&apos;s home for students in AI
-              </motion.h1>
+              <div className="flex flex-row items-center w-full gap-8">
+                <motion.h1
+                  layoutId="main-title"
+                  className="text-8xl font-medium tracking-tight text-white max-w-2xl text-left cursor-default"
+                  onHoverStart={() => setIsHovered(true)}
+                  onHoverEnd={() => setIsHovered(false)}
+                >
+                  Stanford&apos;s home for students in AI
+                </motion.h1>
+                <AnimatePresence>
+                  {isHovered && (
+                    <motion.div
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.2 }}
+                      className="text-xl text-white/60 max-w-sm"
+                    >
+                      Stanford AI Club is where students that shape the future of AI at Stanford
+                      come together. From research to industry, the AI Club offers opportunities to
+                      connect with titans of industry, learn from the best in the field, and find a
+                      place in the AI native future.
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               <div className="flex flex-row items-center justify-center w-full gap-4">
                 <MenuCard
                   layoutId="card-speakers"

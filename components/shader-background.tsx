@@ -13,8 +13,8 @@ export default function ShaderBackground() {
       shape="wave"
       speed={0.32}
       scale={3.8}
-      offsetY={0.7}
-      className="absolute inset-0 -z-10 w-full h-full"
+      offsetY={0.6}
+      className="absolute inset-0 w-full h-full pointer-events-none"
     />
   );
 }
