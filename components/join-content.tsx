@@ -12,9 +12,6 @@ export default function JoinContent() {
       className="w-full h-full space-y-8 p-6 py-0 max-w-4xl mx-auto flex flex-col justify-center"
     >
       <div className="space-y-4">
-        <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight">
-          Stay up to date
-        </h2>
         <h5 className="text-lg md:text-xl text-white/60 max-w-2xl">
           Subscribe to our mailing list and follow us on social media to keep up with the latest
           events, workshops, and exclusive opportunities in AI at Stanford.
@@ -60,4 +57,3 @@ export default function JoinContent() {
     </motion.div>
   );
 }
-

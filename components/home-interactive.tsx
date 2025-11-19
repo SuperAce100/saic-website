@@ -113,7 +113,7 @@ export default function HomeInteractive() {
                 >
                   <MenuCard
                     layoutId="card-board"
-                    title="Board"
+                    title="Team"
                     image="/stanny.png"
                     onClick={() => setView("board")}
                     className="w-full h-full"
@@ -133,7 +133,7 @@ export default function HomeInteractive() {
                 >
                   <MenuCard
                     layoutId="card-join"
-                    title="Join"
+                    title="Get involved"
                     image="/mail.png"
                     onClick={() => setView("join")}
                     className="w-full h-full"
@@ -167,7 +167,7 @@ export default function HomeInteractive() {
                   <div className="w-full max-w-4xl mx-auto">
                     <MenuCard
                       layoutId="card-board"
-                      title="Board"
+                      title="Team"
                       image="/stanny.png"
                       onClick={clearView}
                       className="w-full h-64 mb-8"
@@ -179,7 +179,7 @@ export default function HomeInteractive() {
                   <div className="w-full max-w-4xl mx-auto">
                     <MenuCard
                       layoutId="card-join"
-                      title="Join"
+                      title="Get involved"
                       image="/mail.png"
                       onClick={clearView}
                       className="w-full h-64 mb-8"
