@@ -42,8 +42,8 @@ export default function MenuCard({
       <motion.h3
         layoutId={`${layoutId}-title`}
         className={cn(
-          "text-5xl text-white font-medium tracking-tight absolute bottom-6 left-6 text-center z-10",
-          isBanner && "text-7xl"
+          "text-2xl sm:text-3xl md:text-5xl text-white font-medium tracking-tight absolute bottom-4 sm:bottom-6 left-6 text-center z-10",
+          isBanner && "text-3xl sm:text-4xl md:text-7xl"
         )}
       >
         {title}

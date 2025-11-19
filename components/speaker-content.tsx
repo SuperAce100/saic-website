@@ -1,4 +1,4 @@
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import { CalendarIcon } from "@radix-ui/react-icons";
 
 const speakers = [
@@ -66,12 +66,14 @@ export default function SpeakerContent() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-1">
-                  <h3 className="text-2xl font-medium text-white transition-colors">
+                  <h3 className="text-xl md:text-2xl font-medium text-white transition-colors">
                     {speaker.name}
                   </h3>
-                  <span className="text-white/60 text-lg font-medium">{speaker.role}</span>
+                  <span className="text-white/60 text-base md:text-lg font-medium">
+                    {speaker.role}
+                  </span>
                 </div>
-                <p className="text-white/40 text-md leading-relaxed truncate group-hover:whitespace-normal transition-all">
+                <p className="text-white/40 text-sm md:text-md leading-relaxed truncate group-hover:whitespace-normal transition-all">
                   {speaker.background}
                 </p>
               </div>

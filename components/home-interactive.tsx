@@ -21,7 +21,7 @@ export default function HomeInteractive() {
           {!view ? (
             <motion.div
               key="home"
-              className="flex flex-col items-center justify-end w-full p-16 flex-1 gap-16 h-full"
+              className="flex flex-col items-center justify-end w-full p-6 md:p-16 flex-1 gap-8 md:gap-16 h-full overflow-y-auto md:overflow-hidden"
               variants={{
                 hidden: { opacity: 0 },
                 visible: {
@@ -40,7 +40,7 @@ export default function HomeInteractive() {
               animate="visible"
               exit="exit"
             >
-              <div className="flex flex-row items-center w-full gap-8">
+              <div className="flex flex-col md:flex-row items-center w-full gap-4 md:gap-8 mt-auto">
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
@@ -54,7 +54,7 @@ export default function HomeInteractive() {
                 >
                   <motion.h1
                     layoutId="main-title"
-                    className="text-8xl font-medium tracking-tight text-white max-w-2xl text-left cursor-default"
+                    className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-medium tracking-tight text-white max-w-2xl text-left cursor-default"
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
                   >
@@ -68,7 +68,7 @@ export default function HomeInteractive() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.2 }}
-                      className="text-xl text-white/60 max-w-sm"
+                      className="text-lg md:text-xl text-white/60 max-w-sm hidden md:block"
                     >
                       Stanford AI Club is where students that shape the future of AI at Stanford
                       come together. From research to industry, the AI Club offers opportunities to
@@ -78,9 +78,9 @@ export default function HomeInteractive() {
                   )}
                 </AnimatePresence>
               </div>
-              <div className="flex flex-row items-center justify-center w-full gap-4">
+              <div className="flex flex-col md:flex-row items-center justify-center w-full gap-4 pb-4 md:pb-0">
                 <motion.div
-                  className="flex-1 aspect-square"
+                  className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                     visible: {
@@ -100,7 +100,7 @@ export default function HomeInteractive() {
                   />
                 </motion.div>
                 <motion.div
-                  className="flex-1 aspect-square"
+                  className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                     visible: {
@@ -120,7 +120,7 @@ export default function HomeInteractive() {
                   />
                 </motion.div>
                 <motion.div
-                  className="flex-1 aspect-square"
+                  className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                     visible: {

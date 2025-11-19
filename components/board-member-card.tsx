@@ -5,7 +5,6 @@ import {
   GlobeIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
-  ReaderIcon,
 } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,8 +53,8 @@ export default function BoardMemberCard({
         )}
       </div>
       <div>
-        <h3 className="text-2xl font-medium text-white">{name}</h3>
-        <p className="text-white/60 text-lg">{title}</p>
+        <h3 className="text-xl md:text-2xl font-medium text-white">{name}</h3>
+        <p className="text-white/60 text-base md:text-lg">{title}</p>
       </div>
 
       <div className="flex gap-4">
