@@ -21,7 +21,7 @@ export default function HomeInteractive() {
           {!view ? (
             <motion.div
               key="home"
-              className="flex flex-col items-center justify-end w-full p-6 md:p-16 flex-1 gap-8 md:gap-16 h-full overflow-y-auto md:overflow-hidden"
+              className="flex flex-col items-center justify-end w-full p-6 md:p-16 pb-24 md:pb-24 flex-1 gap-8 md:gap-16 h-full overflow-y-auto md:overflow-hidden"
               variants={{
                 hidden: { opacity: 0 },
                 visible: {

@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import ShaderBackground from "@/components/shader-background";
 import Navbar from "@/components/navbar";
 import HomeInteractive from "@/components/home-interactive";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Suspense fallback={null}>
         <HomeInteractive />
       </Suspense>
+      <Footer />
     </div>
   );
 }
