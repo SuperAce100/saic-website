@@ -61,18 +61,6 @@ const BOARD_MEMBERS: BoardMember[] = [
       github: "https://github.com/SuperAce100",
     },
   },
-  {
-    name: "Board Member",
-    title: "Role TBD",
-  },
-  {
-    name: "Board Member",
-    title: "Role TBD",
-  },
-  {
-    name: "Board Member",
-    title: "Role TBD",
-  },
 ];
 
 export default function BoardContent() {
