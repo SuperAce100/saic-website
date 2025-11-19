@@ -22,19 +22,45 @@ export default function HomeInteractive() {
             <motion.div
               key="home"
               className="flex flex-col items-center justify-end w-full p-16 flex-1 gap-16 h-full"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.15,
+                    delayChildren: 0.2,
+                  },
+                },
+                exit: {
+                  opacity: 0,
+                  transition: { duration: 0.2 },
+                },
+              }}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
             >
               <div className="flex flex-row items-center w-full gap-8">
-                <motion.h1
-                  layoutId="main-title"
-                  className="text-8xl font-medium tracking-tight text-white max-w-2xl text-left cursor-default"
-                  onHoverStart={() => setIsHovered(true)}
-                  onHoverEnd={() => setIsHovered(false)}
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      filter: "blur(0px)",
+                      transition: { duration: 0.6, ease: "easeOut" },
+                    },
+                  }}
                 >
-                  Stanford&apos;s home for students in AI
-                </motion.h1>
+                  <motion.h1
+                    layoutId="main-title"
+                    className="text-8xl font-medium tracking-tight text-white max-w-2xl text-left cursor-default"
+                    onHoverStart={() => setIsHovered(true)}
+                    onHoverEnd={() => setIsHovered(false)}
+                  >
+                    Stanford&apos;s home for students in AI
+                  </motion.h1>
+                </motion.div>
                 <AnimatePresence>
                   {isHovered && (
                     <motion.div
@@ -53,27 +79,66 @@ export default function HomeInteractive() {
                 </AnimatePresence>
               </div>
               <div className="flex flex-row items-center justify-center w-full gap-4">
-                <MenuCard
-                  layoutId="card-speakers"
-                  title="Speakers"
-                  image="/sam.png"
-                  onClick={() => setView("speakers")}
+                <motion.div
                   className="flex-1 aspect-square"
-                />
-                <MenuCard
-                  layoutId="card-board"
-                  title="Board"
-                  image="/stanny.png"
-                  onClick={() => setView("board")}
+                  variants={{
+                    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      filter: "blur(0px)",
+                      transition: { duration: 0.6, ease: "easeOut" },
+                    },
+                  }}
+                >
+                  <MenuCard
+                    layoutId="card-speakers"
+                    title="Speakers"
+                    image="/sam.png"
+                    onClick={() => setView("speakers")}
+                    className="w-full h-full"
+                  />
+                </motion.div>
+                <motion.div
                   className="flex-1 aspect-square"
-                />
-                <MenuCard
-                  layoutId="card-join"
-                  title="Join"
-                  image="/mail.png"
-                  onClick={() => setView("join")}
+                  variants={{
+                    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      filter: "blur(0px)",
+                      transition: { duration: 0.6, ease: "easeOut" },
+                    },
+                  }}
+                >
+                  <MenuCard
+                    layoutId="card-board"
+                    title="Board"
+                    image="/stanny.png"
+                    onClick={() => setView("board")}
+                    className="w-full h-full"
+                  />
+                </motion.div>
+                <motion.div
                   className="flex-1 aspect-square"
-                />
+                  variants={{
+                    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      filter: "blur(0px)",
+                      transition: { duration: 0.6, ease: "easeOut" },
+                    },
+                  }}
+                >
+                  <MenuCard
+                    layoutId="card-join"
+                    title="Join"
+                    image="/mail.png"
+                    onClick={() => setView("join")}
+                    className="w-full h-full"
+                  />
+                </motion.div>
               </div>
             </motion.div>
           ) : (

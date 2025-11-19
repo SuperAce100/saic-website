@@ -1,7 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { Heatmap, ImageDithering } from "@paper-design/shaders-react";
-import { Mail, ArrowRight } from "lucide-react";
 
 export default function JoinContent() {
   return (
@@ -19,7 +17,7 @@ export default function JoinContent() {
 
       <motion.a
         className="group block p-2 w-fit "
-        href={"#"}
+        href={"https://mailman.stanford.edu/mailman/listinfo/saic-members"}
         target="_blank"
         rel="noopener noreferrer"
       >
