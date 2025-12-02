@@ -61,8 +61,10 @@ export default function MenuCard({
         <ImageDithering
           className={cn(
             "w-full h-full object-cover transition-transform duration-300",
-            !isBanner && "group-hover:scale-105"
+            !isBanner && "group-hover:scale-105",
+            !isBanner && "object-top"
           )}
+          style={!isBanner ? { objectPosition: "top center" } : undefined}
           width="100%"
           height="100%"
           image={image}
