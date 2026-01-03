@@ -79,7 +79,7 @@ const allSpeakers: Speaker[] = [
   },
   {
     name: "Will Bryk",
-    role: "Founder &CEO, Exa",
+    role: "Founder & CEO, Exa",
     background: "Founded the world's top search engine for AI",
     year: "2024-2025",
   },
