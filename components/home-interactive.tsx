@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useQueryState } from "nuqs";
 import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
 import MenuCard from "@/components/menu-card";
@@ -10,7 +9,6 @@ import JoinContent from "@/components/join-content";
 
 export default function HomeInteractive() {
   const [view, setView] = useQueryState("view");
-  const [isHovered, setIsHovered] = useState(false);
 
   const clearView = () => setView(null);
 
@@ -40,44 +38,31 @@ export default function HomeInteractive() {
               animate="visible"
               exit="exit"
             >
-              <div className="flex flex-col md:flex-row items-center w-full gap-4 md:gap-8 mt-auto">
-                <motion.div
-                  variants={{
-                    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      filter: "blur(0px)",
-                      transition: { duration: 0.6, ease: "easeOut" },
-                    },
-                  }}
+              <motion.div
+                className="flex flex-col w-full gap-4 mt-auto"
+                variants={{
+                  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    filter: "blur(0px)",
+                    transition: { duration: 0.6, ease: "easeOut" },
+                  },
+                }}
+              >
+                <motion.h1
+                  layoutId="main-title"
+                  className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-medium tracking-tight text-white max-w-2xl text-left"
                 >
-                  <motion.h1
-                    layoutId="main-title"
-                    className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-medium tracking-tight text-white max-w-2xl text-left cursor-default"
-                    onHoverStart={() => setIsHovered(true)}
-                    onHoverEnd={() => setIsHovered(false)}
-                  >
-                    Stanford&apos;s home for students in AI
-                  </motion.h1>
-                </motion.div>
-                <AnimatePresence>
-                  {isHovered && (
-                    <motion.div
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: -20 }}
-                      transition={{ duration: 0.2 }}
-                      className="text-lg md:text-xl text-white/60 max-w-sm hidden md:block"
-                    >
-                      Stanford AI Club is where students that shape the future of AI at Stanford
-                      come together. From research to industry, the AI Club offers opportunities to
-                      connect with titans of industry, learn from the best in the field, and find a
-                      place in the AI native future.
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                  Stanford&apos;s home for students in AI
+                </motion.h1>
+                <p className="text-base md:text-lg text-white/60 max-w-xl">
+                  Stanford AI Club is where students that shape the future of AI at Stanford come
+                  together. From research to industry, the AI Club offers opportunities to connect
+                  with titans of industry, learn from the best in the field, and find a place in the
+                  AI native future.
+                </p>
+              </motion.div>
               <div className="flex flex-col md:flex-row items-center justify-center w-full gap-4 pb-4 md:pb-0">
                 <motion.div
                   className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
