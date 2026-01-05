@@ -3,21 +3,8 @@ import BoardMemberCard, { BoardMember } from "@/components/board-member-card";
 
 const BOARD_MEMBERS: BoardMember[] = [
   {
-    name: "Sally Zhu",
-    title: "President",
-    image: "/board/sally.png",
-    links: {
-      linkedin: "https://www.linkedin.com/in/sally-zhu-937b7b127/",
-      twitter: "https://x.com/SallyHZhu",
-      website: "https://salzhu.github.io/",
-      googleScholar:
-        "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=8JOQdDkAAAAJ",
-      github: "https://github.com/salzhu",
-    },
-  },
-  {
     name: "Tanvir Bhathal",
-    title: "Speaker Series",
+    title: "Co-President",
     image: "/board/tanvir.png",
     links: {
       linkedin: "https://www.linkedin.com/in/tanvir-bhathal/",
@@ -28,7 +15,7 @@ const BOARD_MEMBERS: BoardMember[] = [
   },
   {
     name: "Jason Zhang",
-    title: "Speaker Series",
+    title: "Co-President",
     image: "/board/jason.png",
     links: {
       linkedin: "https://www.linkedin.com/in/jason-zhang-6860361b8/",
@@ -38,17 +25,38 @@ const BOARD_MEMBERS: BoardMember[] = [
     },
   },
   {
-    name: "Kushal Thaman",
-    title: "Research",
-    image: "/board/kushal.png",
+    name: "Ethan Boneh",
+    title: "Financial Officer",
+    image: "/board/ethan.png",
     links: {
-      linkedin: "https://www.linkedin.com/in/k-thaman/",
-      twitter: "https://x.com/kushal1t",
-      website: "https://cs.stanford.edu/~kushalt/",
-      googleScholar: "https://scholar.google.com/citations?user=89nZKJgAAAAJ",
-      github: "https://github.com/kushalthaman",
+      linkedin: "https://www.linkedin.com/in/ethan-boneh/",
+      twitter: "https://x.com/ethanboneh",
+      github: "https://github.com/ethanboneh",
+      ieee: "https://ieeexplore-ieee-org.stanford.idm.oclc.org/author/335166912586583",
     },
   },
+  {
+    name: "Grace Luo",
+    title: "Financial Officer",
+    image: "/board/grace.jpeg",
+    links: {
+      linkedin: "https://www.linkedin.com/in/grace-luo-044370175/",
+    },
+  },
+  {
+    name: "Sally Zhu",
+    title: "President Emeritus",
+    image: "/board/sally.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/sally-zhu-937b7b127/",
+      twitter: "https://x.com/SallyHZhu",
+      website: "https://salzhu.github.io/",
+      googleScholar:
+        "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=8JOQdDkAAAAJ",
+      github: "https://github.com/salzhu",
+    },
+  },
+
   {
     name: "Asanshay Gupta",
     title: "Design",
@@ -59,6 +67,31 @@ const BOARD_MEMBERS: BoardMember[] = [
       website: "https://asanshay.com",
       googleScholar: "https://scholar.google.com/citations?hl=en&user=agB2x10AAAAJ",
       github: "https://github.com/SuperAce100",
+    },
+  },
+  {
+    name: "Chandra Suda",
+    title: "Media",
+    image: "/board/chandra.jpeg",
+    links: {
+      linkedin: "https://www.linkedin.com/in/chandrasuda",
+      twitter: "https://x.com/chandrasudak",
+      website: "https://chandrasuda.com",
+      googleScholar: "https://scholar.google.com/citations?user=uJc_OLYAAAAJ&hl=en",
+      github: "https://github.com/chandrasuda",
+    },
+  },
+
+  {
+    name: "Kushal Thaman",
+    title: "Research",
+    image: "/board/kushal.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/k-thaman/",
+      twitter: "https://x.com/kushal1t",
+      website: "https://cs.stanford.edu/~kushalt/",
+      googleScholar: "https://scholar.google.com/citations?user=89nZKJgAAAAJ",
+      github: "https://github.com/kushalthaman",
     },
   },
 ];

@@ -8,7 +8,7 @@ import {
 } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
-import { GraduationCapIcon } from "lucide-react";
+import { BookOpenIcon, GraduationCapIcon } from "lucide-react";
 
 export interface BoardMember {
   name: string;
@@ -20,6 +20,7 @@ export interface BoardMember {
     website?: string;
     googleScholar?: string;
     github?: string;
+    ieee?: string;
   };
 }
 
@@ -106,6 +107,16 @@ export default function BoardMemberCard({
             className="text-white/60 hover:text-white transition-colors"
           >
             <GitHubLogoIcon className="w-5 h-5" />
+          </Link>
+        )}
+        {links?.ieee && (
+          <Link
+            href={links.ieee}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors"
+          >
+            <BookOpenIcon className="w-5 h-5" />
           </Link>
         )}
       </div>
