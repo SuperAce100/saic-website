@@ -19,7 +19,7 @@ export default function HomeInteractive() {
           {!view ? (
             <motion.div
               key="home"
-              className="flex flex-col items-center justify-end w-full p-6 md:p-16 pb-24 md:pb-24 flex-1 gap-8 md:gap-16 h-full overflow-y-auto md:overflow-hidden"
+              className="flex flex-col items-center justify-between w-full p-4 md:p-16 pt-16 pb-20 md:pb-24 flex-1 gap-6 md:gap-12 h-full overflow-y-auto"
               variants={{
                 hidden: { opacity: 0 },
                 visible: {
@@ -39,7 +39,7 @@ export default function HomeInteractive() {
               exit="exit"
             >
               <motion.div
-                className="flex flex-col w-full gap-4 mt-auto"
+                className="flex flex-col w-full gap-3 md:gap-4"
                 variants={{
                   hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                   visible: {
@@ -63,9 +63,9 @@ export default function HomeInteractive() {
                   AI native future.
                 </p>
               </motion.div>
-              <div className="flex flex-col md:flex-row items-center justify-center w-full gap-4 pb-4 md:pb-0">
+              <div className="flex flex-col md:flex-row items-center justify-center w-full gap-3 md:gap-4 pb-4 md:pb-0">
                 <motion.div
-                  className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
+                  className="w-full h-28 sm:h-36 md:h-auto md:flex-1 md:aspect-square"
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                     visible: {
@@ -85,7 +85,7 @@ export default function HomeInteractive() {
                   />
                 </motion.div>
                 <motion.div
-                  className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
+                  className="w-full h-28 sm:h-36 md:h-auto md:flex-1 md:aspect-square"
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                     visible: {
@@ -105,7 +105,7 @@ export default function HomeInteractive() {
                   />
                 </motion.div>
                 <motion.div
-                  className="w-full h-40 sm:h-48 md:h-auto md:flex-1 md:aspect-square"
+                  className="w-full h-28 sm:h-36 md:h-auto md:flex-1 md:aspect-square"
                   variants={{
                     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
                     visible: {
