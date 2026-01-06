@@ -11,6 +11,45 @@ type Speaker = {
 
 const allSpeakers: Speaker[] = [
   {
+    name: "Amir Zadeh, Chuan Li, Tal Daniel",
+    role: "Hacky Hours (PhD, Postdoc)",
+    background: "Interactive session with Stanford AI researchers.",
+    date: new Date("2026-03-18 18:00:00"),
+    year: "2025-2026",
+  },
+  {
+    name: "Audrey Wisch, Drew Bent, Rob Reich",
+    role: "Anthropic, Curious Cardinals, Stanford",
+    background: "Panel on AI ethics, education, and industry perspectives.",
+    date: new Date("2026-01-22 18:00:00"),
+    year: "2025-2026",
+  },
+  {
+    name: "Brett Taylor",
+    role: "CEO, Sierra AI; Chair, OpenAI Board",
+    background: "Ex-CTO of Facebook, CEO of Salesforce, created Google Maps.",
+    date: new Date("2026-01-14 18:00:00"),
+    year: "2025-2026",
+  },
+  {
+    name: "Danny Driess",
+    role: "Research Scientist, Physical Intelligence",
+    background: "Leading researcher in embodied AI and robotics.",
+    year: "2025-2026",
+  },
+  {
+    name: "Pat Grady & Alfred Lin",
+    role: "Managing Partners, Sequoia Capital",
+    background: "Partners at the world's most iconic venture capital fund.",
+    year: "2025-2026",
+  },
+  {
+    name: "Philip Clark, Miles Grimshaw & Cursor Team",
+    role: "Thrive Capital & Cursor",
+    background: "Top VC investors and builders of the AI-native code editor.",
+    year: "2025-2026",
+  },
+  {
     name: "Parag Agrawal",
     role: "Founder & CEO, Parallel Web Systems",
     background: "Former CEO of Twitter",

@@ -13,6 +13,7 @@ const BOARD_MEMBERS: BoardMember[] = [
       googleScholar: "https://scholar.google.com/citations?hl=en&user=bnc3of4AAAAJ",
     },
   },
+
   {
     name: "Jason Zhang",
     title: "Co-President",
@@ -22,25 +23,6 @@ const BOARD_MEMBERS: BoardMember[] = [
       twitter: "https://x.com/minisounds",
       website: "https://jasonzhang.info",
       googleScholar: "https://scholar.google.com/citations?user=LY1rce8AAAAJ&hl=en&authuser=1",
-    },
-  },
-  {
-    name: "Ethan Boneh",
-    title: "Financial Officer",
-    image: "/board/ethan.png",
-    links: {
-      linkedin: "https://www.linkedin.com/in/ethan-boneh/",
-      twitter: "https://x.com/ethanboneh",
-      github: "https://github.com/ethanboneh",
-      ieee: "https://ieeexplore-ieee-org.stanford.idm.oclc.org/author/335166912586583",
-    },
-  },
-  {
-    name: "Grace Luo",
-    title: "Financial Officer",
-    image: "/board/grace.jpeg",
-    links: {
-      linkedin: "https://www.linkedin.com/in/grace-luo-044370175/",
     },
   },
   {
@@ -69,6 +51,40 @@ const BOARD_MEMBERS: BoardMember[] = [
       github: "https://github.com/SuperAce100",
     },
   },
+  {
+    name: "Grace Luo",
+    title: "Financial Officer",
+    image: "/board/grace.jpeg",
+    links: {
+      linkedin: "https://www.linkedin.com/in/grace-luo-044370175/",
+    },
+  },
+  {
+    name: "Ethan Boneh",
+    title: "Financial Officer",
+    image: "/board/ethan.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/ethan-boneh/",
+      twitter: "https://x.com/ethanboneh",
+      github: "https://github.com/ethanboneh",
+      ieee: "https://ieeexplore-ieee-org.stanford.idm.oclc.org/author/335166912586583",
+    },
+  },
+
+  {
+    name: "Sally Zhu",
+    title: "President Emeritus",
+    image: "/board/sally.png",
+    links: {
+      linkedin: "https://www.linkedin.com/in/sally-zhu-937b7b127/",
+      twitter: "https://x.com/SallyHZhu",
+      website: "https://salzhu.github.io/",
+      googleScholar:
+        "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=8JOQdDkAAAAJ",
+      github: "https://github.com/salzhu",
+    },
+  },
+
   {
     name: "Chandra Suda",
     title: "Media",
