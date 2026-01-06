@@ -70,21 +70,6 @@ const BOARD_MEMBERS: BoardMember[] = [
       ieee: "https://ieeexplore-ieee-org.stanford.idm.oclc.org/author/335166912586583",
     },
   },
-
-  {
-    name: "Sally Zhu",
-    title: "President Emeritus",
-    image: "/board/sally.png",
-    links: {
-      linkedin: "https://www.linkedin.com/in/sally-zhu-937b7b127/",
-      twitter: "https://x.com/SallyHZhu",
-      website: "https://salzhu.github.io/",
-      googleScholar:
-        "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=8JOQdDkAAAAJ",
-      github: "https://github.com/salzhu",
-    },
-  },
-
   {
     name: "Chandra Suda",
     title: "Media",

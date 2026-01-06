@@ -57,10 +57,10 @@ export default function HomeInteractive() {
                   Stanford&apos;s home for students in AI
                 </motion.h1>
                 <p className="text-base md:text-lg text-white/60 max-w-xl">
-                  Stanford AI Club is where students that shape the future of AI at Stanford come
-                  together. From research to industry, the AI Club offers opportunities to connect
-                  with titans of industry, learn from the best in the field, and find a place in the
-                  AI native future.
+                  Stanford AI Club is where the students that shape the future of AI at Stanford
+                  come together. From research to industry, we offer opportunities to connect with
+                  titans of industry, learn from the best in the field, and get started in the
+                  field.
                 </p>
               </motion.div>
               <div className="flex flex-col md:flex-row items-center justify-center w-full gap-3 md:gap-4 pb-4 md:pb-0">
