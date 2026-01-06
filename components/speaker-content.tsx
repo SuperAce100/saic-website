@@ -30,12 +30,12 @@ const allSpeakers: Speaker[] = [
     background: "Leading researcher in embodied AI and robotics.",
     year: "2025-2026",
   },
-  {
-    name: "Pat Grady & Alfred Lin",
-    role: "Managing Partners, Sequoia Capital",
-    background: "Partners at the world's most iconic venture capital fund.",
-    year: "2025-2026",
-  },
+  // {
+  //   name: "Pat Grady & Alfred Lin",
+  //   role: "Managing Partners, Sequoia Capital",
+  //   background: "Partners at the world's most iconic venture capital fund.",
+  //   year: "2025-2026",
+  // },
   {
     name: "Parag Agrawal",
     role: "Founder & CEO, Parallel Web Systems",
