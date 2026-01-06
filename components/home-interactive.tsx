@@ -56,7 +56,7 @@ export default function HomeInteractive() {
                 >
                   Stanford&apos;s home for students in AI
                 </motion.h1>
-                <p className="text-base md:text-lg text-white/60 max-w-xl">
+                <p className="text-lg md:text-xl text-white/70 max-w-xl">
                   Stanford AI Club is where the students that shape the future of AI at Stanford
                   come together. From research to industry, we offer opportunities to connect with
                   titans of industry, learn from the best in the field, and get started in the
