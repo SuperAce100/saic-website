@@ -17,13 +17,13 @@ const allSpeakers: Speaker[] = [
     date: new Date("2026-01-22 18:00:00"),
     year: "2025-2026",
   },
-  {
-    name: "Bret Taylor",
-    role: "CEO, Sierra; Chair, OpenAI Board",
-    background: "Ex-CTO of Facebook, CEO of Salesforce, created Google Maps.",
-    date: new Date("2026-01-14 18:00:00"),
-    year: "2025-2026",
-  },
+  // {
+  //   name: "Bret Taylor",
+  //   role: "CEO, Sierra; Chair, OpenAI Board",
+  //   background: "Ex-CTO of Facebook, CEO of Salesforce, created Google Maps.",
+  //   date: new Date("2026-01-14 18:00:00"),
+  //   year: "2025-2026",
+  // },
   {
     name: "Danny Driess",
     role: "Research Scientist, Physical Intelligence",
